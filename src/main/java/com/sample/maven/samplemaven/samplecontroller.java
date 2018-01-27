@@ -9,6 +9,6 @@ public class samplecontroller {
 	@RequestMapping("/getvalue")
 	public String getvalue()
 	{
-		return "Jenkins updated ";
+		return "Jenkins updated again....";
 	}
 }
