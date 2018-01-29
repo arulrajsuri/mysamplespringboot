@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("vinsregistry.azurecr.io/samplepro")
+        app = docker.build("arulrajsuri/samplepro")
     }
 
     stage('Push image') {
@@ -19,7 +19,7 @@ node {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-        docker.withRegistry('https://vinsregistry.azurecr.io', 'docker-hub-secret') {
+        docker.withRegistry('https://hub.docker.com/', 'docker-hub-secret') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
