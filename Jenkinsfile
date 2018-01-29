@@ -22,6 +22,6 @@ node {
         //docker.withRegistry('https://hub.docker.com/', 'docker-hub-secret') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
-        }
+       // }
     }
 }
