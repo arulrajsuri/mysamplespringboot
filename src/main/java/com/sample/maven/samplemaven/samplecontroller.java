@@ -11,4 +11,10 @@ public class samplecontroller {
 	{
 		return "Jenkins updated again....";
 	}
+	
+	@RequestMapping("/getapp")
+	public String getdata()
+	{
+		return "VINS CaDET Application running Kubernetes Cluster";
+	}
 }
