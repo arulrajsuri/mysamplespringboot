@@ -15,6 +15,6 @@ public class samplecontroller {
 	@RequestMapping("/getapp")
 	public String getdata()
 	{
-		return "VINS CaDET Application running Kubernetes Cluster";
+		return "VINS CaDET Application running in Azure Container Service Kubernetes Cluster";
 	}
 }
